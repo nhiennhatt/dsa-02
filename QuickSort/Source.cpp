@@ -12,11 +12,11 @@ void init(int arr[], int& n) {
 }
 
 void QuickSort(int arr[], int left, int right) {
-	int middle = (left + right) / 2, currentLeft = left, currentRight = right;
+	int middle = arr[(left + right)] / 2, currentLeft = left, currentRight = right;
 
 	do {
-		while (arr[currentLeft] < arr[middle]) currentLeft++;
-		while (arr[currentRight] > arr[middle]) currentRight--;
+		while (arr[currentLeft] < middle) currentLeft++;
+		while (arr[currentRight] > middle) currentRight--;
 
 		if (currentLeft <= currentRight) {
 			swap(arr[currentLeft], arr[currentRight]);
