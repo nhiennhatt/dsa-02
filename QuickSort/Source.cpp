@@ -12,7 +12,7 @@ void init(int arr[], int& n) {
 }
 
 void QuickSort(int arr[], int left, int right) {
-	int middle = arr[(left + right)] / 2, currentLeft = left, currentRight = right;
+	int middle = arr[(left + right) / 2], currentLeft = left, currentRight = right;
 
 	do {
 		while (arr[currentLeft] < middle) currentLeft++;
